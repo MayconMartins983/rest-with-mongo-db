@@ -4,3 +4,10 @@ spring:
       host: localhost
       port: 27017
       database: produtos
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics, prometheus
